@@ -1,14 +1,19 @@
 @import './variables';
 
 .card {
-  width: 198px;
+  box-sizing: border-box;
+  width: 200px;
   height: 406px;
   border: 1px solid;
   border-radius: $radius;
-  border-color: rgba(243, 243, 243, 1);
+  border-color: rgb(243, 243, 243);
   display: flex;
   flex-flow: column nowrap;
   transition: transform 300ms;
+  transition: color 300ms;
+  transition: background-color 300ms;
+  transition: border 300ms;
+  transition: border-color 300ms;
 
   .card__image {
     width: 160px;
@@ -76,7 +81,7 @@
     margin-left: $left;
     margin-top: 16px;
     border-radius: $radius;
-    background-color: rgba(0, 172, 220, 1);
+    background-color: $blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,14 +102,12 @@
   }
 
   .card__link:hover {
-    width: 164px;
-    height: 38px;
     border: 1px solid;
-    border-color: rgba(0, 172, 220, 1);
-    background: none;
+    border-color: $blue;
+    background-color: #fff;
 
     a {
-      color: rgba(0, 172, 220, 1);
+      color: $blue;
     }
   }
 }
@@ -112,6 +115,6 @@
 .card:hover {
   transform: scale(1.2);
   .card__product {
-    color: #34568b;
+    color: $title-color;
   }
 }

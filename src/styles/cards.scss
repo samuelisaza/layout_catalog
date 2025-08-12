@@ -6,7 +6,7 @@
 }
 
 .cards {
-  padding: 50px 40px;
+  padding: $padding;
   display: grid;
   grid-template-columns: 1fr;
 
@@ -22,5 +22,5 @@
     grid-template-columns: repeat(4, 200px);
   }
 
-  gap: 46px 48px;
+  gap: $gap;
 }
